@@ -84,7 +84,7 @@
     border-style: $ui-default-border-style;
     border-color: $ui-default-border-color;
     @include jquery-ui-background($ui-default-background, $ui-default-background-type);
-    font-weight: normal;
+    font-weight: $ui-default-font-weight;
     color: $ui-default-color; }
 
   .ui-state-default a {
@@ -98,9 +98,8 @@
     border-width: $ui-hover-border-width;
     border-style: $ui-hover-border-style;
     border-color: $ui-hover-border-color;
-    
     @include jquery-ui-background($ui-hover-background, $ui-hover-background-type);
-    font-weight: normal;
+    font-weight: $ui-hover-font-weight;
     color: $ui-hover-color; }
 
   .ui-state-hover a {
@@ -114,9 +113,8 @@
     border-width: $ui-active-border-width;
     border-style: $ui-active-border-style;
     border-color: $ui-active-border-color;
-    
     @include jquery-ui-background($ui-active-background, $ui-active-background-type);
-    font-weight: normal;
+    font-weight: $ui-active-font-weight;
     color: $ui-active-color; }
 
   .ui-state-active a {
@@ -138,7 +136,6 @@
     border-width: $ui-highlight-border-width;
     border-style: $ui-highlight-border-style;
     border-color: $ui-highlight-border-color;
-    
     @include jquery-ui-background($ui-highlight-background, $ui-highlight-background-type);
     color: $ui-highlight-color; }
 
@@ -157,11 +154,13 @@
     color: $ui-error-link-color; }
 
   .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
-    font-weight: bold; }
+    font-weight: $ui-priority-font-weight; 
+  }
 
   .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
     @include opacity($ui-priority-secondary-opacity);
-    font-weight: normal; }
+    font-weight: $ui-priority-secondary-font-weight;
+  }
 
   .ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
     @include opacity($ui-disabled-opacity);
