@@ -94,15 +94,15 @@ $ui-hover-background: linear-gradient(#e4e4e4,#eaeaea) !default;
 $ui-hover-background-type: gradient !default;
 
 // State-Focus
-$ui-focus-border-width: 1px !default;
-$ui-focus-border-style: solid !default;
-$ui-focus-border-color: #999999 !default;
-$ui-focus-color: #212121 !default;
+$ui-focus-border-width: $ui-hover-border-width !default;
+$ui-focus-border-style: $ui-hover-border-style !default;
+$ui-focus-border-color: $ui-hover-border-color !default;
+$ui-focus-color: $ui-hover-color !default;
 $ui-focus-link-color: $ui-hover-color !default;
-$ui-focus-font-weight: normal !default;
-$ui-focus-background-color: #dadada !default;
-$ui-focus-background: linear-gradient(#e4e4e4,#eaeaea) !default;
-$ui-focus-background-type: gradient !default;
+$ui-focus-font-weight: $ui-hover-font-weight !default;
+$ui-focus-background-color: $ui-hover-background-color !default;
+$ui-focus-background: $ui-hover-background !default;
+$ui-focus-background-type: $ui-hover-background-type !default;
 
 // State-Active
 $ui-active-border-width: 1px !default;
