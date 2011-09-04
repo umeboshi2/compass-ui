@@ -55,7 +55,7 @@
     .ui-accordion-header.ui-state-focus {
       color: $ui-default-color;
       border-color: $ui-default-border-color;
-      @include jquery-ui-background($ui-default-background, $ui-default-background-type);
+      @include jquery-ui-background($ui-default-background-color, $ui-default-background, $ui-default-background-type);
     }
   }
   .ui-accordion-icons .ui-accordion-header a	{ padding-left: 2.6em; }

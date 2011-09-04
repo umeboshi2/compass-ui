@@ -7,7 +7,7 @@
       padding: 0.5em 0.2em;
       border: none;
       @include border-bottom-radius(0px);
-      @include jquery-ui-background($ui-titlebar-background, $ui-titlebar-background-type);
+      @include jquery-ui-background($ui-titlebar-background-color, $ui-titlebar-background, $ui-titlebar-background-type);
       color: $ui-titlebar-color;
 
       .ui-icon {
@@ -20,19 +20,19 @@
       top: 4px;
       border: 1px solid #000000;
       cursor: pointer; 
-      @include jquery-ui-background(linear-gradient(#6a6b6e, #3e3e3e), gradient);
+      @include jquery-ui-background(#6a6b6e, linear-gradient(#6a6b6e, #3e3e3e), gradient);
       color: #ffffff;
       &:hover {
         color: $ui-hover-color;
         border-width: $ui-hover-border-width;
         border-style: $ui-hover-border-style;
         border-color: $ui-hover-border-color;
-        @include jquery-ui-background($ui-hover-background, gradient);
+        @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, gradient);
       }
       &:active {
         color: $ui-active-color;
         border-color: $ui-active-border-color;
-        @include jquery-ui-background($ui-active-background, gradient);
+        @include jquery-ui-background($ui-active-background-color, $ui-active-background, gradient);
       }
     }
 
@@ -58,7 +58,7 @@
         border-color: $ui-default-border-color;
         @include border-radius(5px);
         color: $ui-default-color;
-        @include jquery-ui-background($ui-default-background, gradient);
+        @include jquery-ui-background($ui-default-background-color, $ui-default-background, gradient);
       }
 
       .ui-state-focus, 
@@ -67,7 +67,7 @@
         border-color: $ui-default-border-color;
         @include border-radius(5px);
         color: $ui-default-color;
-        @include jquery-ui-background($ui-default-background, gradient);
+        @include jquery-ui-background($ui-default-background-color, $ui-default-background, gradient);
       }
 
       .ui-state-hover,
@@ -76,7 +76,7 @@
         border-color: $ui-hover-border-color;
         @include border-radius(5px);
         color: $ui-hover-color;
-        @include jquery-ui-background($ui-hover-background, gradient);
+        @include jquery-ui-background($ui-default-background-color, $ui-hover-background, gradient);
       }
 
       .ui-state-active,
@@ -85,7 +85,7 @@
         border-color: $ui-active-border-color;
         @include border-radius(5px);
         color: $ui-active-color;
-        @include jquery-ui-background($ui-active-background, gradient);
+        @include jquery-ui-background($ui-default-background-color, $ui-active-background, gradient);
       }
 
     }

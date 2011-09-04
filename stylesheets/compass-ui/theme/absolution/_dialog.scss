@@ -36,12 +36,12 @@
       border: 0px;
       font-size: 1.5em;
       font-weight: normal;
-      @include jquery-ui-background($ui-titlebar-background, $ui-titlebar-background-type);
+      @include jquery-ui-background($ui-titlebar-background-color, $ui-titlebar-background, $ui-titlebar-background-type);
       color: $ui-titlebar-color;
 
       .ui-dialog-titlebar-close {
         border-color: #000000;
-        @include jquery-ui-background(#6a6b6e, #3e3e3e);
+        @include jquery-ui-background(#6a6b6e, linear-gradient(#6a6b6e, #3e3e3e), gradient);
         color: $ui-titlebar-color;
 
         .ui-icon {
@@ -55,7 +55,7 @@
           border-style: $ui-active-border-style;
           border-color: $ui-active-border-color;
           
-          @include jquery-ui-background($ui-active-background, $ui-active-background-type);
+          @include jquery-ui-background($ui-active-background-color, $ui-active-background, $ui-active-background-type);
         }
 
         &.ui-state-hover {
@@ -64,7 +64,7 @@
           border-style: $ui-hover-border-style;
           border-color: $ui-hover-border-color;
           
-          @include jquery-ui-background($ui-hover-background, $ui-hover-background-type);
+          @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, $ui-hover-background-type);
         }
       }
     }

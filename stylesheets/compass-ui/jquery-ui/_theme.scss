@@ -36,10 +36,11 @@
   @include jquery-ui-overlays;
 }
 
-@mixin jquery-ui-background($background, $type: flat) {
+@mixin jquery-ui-background($background-color, $background, $type: flat) {
   @if $type == flat {
     background: $background;
   } @else {
+    background: $background-color;
     @include background-image($background);
   }
 }
@@ -60,7 +61,7 @@
     border-width: $ui-content-border-width;
     border-style: $ui-content-border-style;
     border-color: $ui-content-border-color;
-    @include jquery-ui-background($ui-content-background, $ui-content-background-type);
+    @include jquery-ui-background($ui-content-background-color, $ui-content-background, $ui-content-background-type);
     color: $ui-content-color;
     a {
       color: $ui-content-link-color; } }
@@ -69,7 +70,7 @@
     border-width: $ui-header-border-width;
     border-style: $ui-header-border-style;
     border-color: $ui-header-border-color;
-    @include jquery-ui-background($ui-header-background, $ui-header-background-type);
+    @include jquery-ui-background($ui-header-background-color, $ui-header-background, $ui-header-background-type);
     color: $ui-header-color;
     font-weight: $ui-header-font-weight;
     a {
@@ -85,7 +86,7 @@
     border-width: $ui-default-border-width;
     border-style: $ui-default-border-style;
     border-color: $ui-default-border-color;
-    @include jquery-ui-background($ui-default-background, $ui-default-background-type);
+    @include jquery-ui-background($ui-default-background-color, $ui-default-background, $ui-default-background-type);
     font-weight: $ui-default-font-weight;
     color: $ui-default-color; }
 
@@ -101,7 +102,7 @@
     border-width: $ui-hover-border-width;
     border-style: $ui-hover-border-style;
     border-color: $ui-hover-border-color;
-    @include jquery-ui-background($ui-hover-background, $ui-hover-background-type);
+    @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, $ui-hover-background-type);
     font-weight: $ui-hover-font-weight;
     color: $ui-hover-color; }
 
@@ -117,7 +118,7 @@
     border-width: $ui-focus-border-width;
     border-style: $ui-focus-border-style;
     border-color: $ui-focus-border-color;
-    @include jquery-ui-background($ui-focus-background, $ui-focus-background-type);
+    @include jquery-ui-background($ui-focus-background-color, $ui-focus-background, $ui-focus-background-type);
     font-weight: $ui-focus-font-weight;
     color: $ui-focus-color; }
 
@@ -133,7 +134,7 @@
     border-width: $ui-active-border-width;
     border-style: $ui-active-border-style;
     border-color: $ui-active-border-color;
-    @include jquery-ui-background($ui-active-background, $ui-active-background-type);
+    @include jquery-ui-background($ui-active-background-color, $ui-active-background, $ui-active-background-type);
     font-weight: $ui-active-font-weight;
     color: $ui-active-color; }
 
@@ -156,7 +157,7 @@
     border-width: $ui-highlight-border-width;
     border-style: $ui-highlight-border-style;
     border-color: $ui-highlight-border-color;
-    @include jquery-ui-background($ui-highlight-background, $ui-highlight-background-type);
+    @include jquery-ui-background($ui-highlight-background-color, $ui-highlight-background, $ui-highlight-background-type);
     color: $ui-highlight-color; }
 
   .ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
@@ -167,7 +168,7 @@
     border-style: $ui-error-border-style;
     border-color: $ui-error-border-color;
     
-    @include jquery-ui-background($ui-error-background, $ui-error-background-type);
+    @include jquery-ui-background($ui-error-background-color, $ui-error-background, $ui-error-background-type);
     color: $ui-error-color; }
 
   .ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a, .ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
@@ -776,7 +777,7 @@
 
 @mixin jquery-ui-overlays($radius: $ui-border-radius*2) {
   .ui-widget-overlay {
-    @include jquery-ui-background($ui-overlay-background, $ui-overlay-background-type);
+    @include jquery-ui-background($ui-overlay-background-color, $ui-overlay-background, $ui-overlay-background-type);
     @include opacity($ui-overlay-opacity);
   }
 
@@ -786,7 +787,7 @@
     margin-bottom: 0;
     margin-left: -($radius);
     padding: $radius;
-    @include jquery-ui-background($ui-shadow-background, $ui-shadow-background-type);
+    @include jquery-ui-background($ui-shadow-background-color, $ui-shadow-background, $ui-shadow-background-type);
     @include opacity($ui-shadow-opacity);
     @include border-radius($radius);
   } 
