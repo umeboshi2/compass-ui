@@ -1,0 +1,14 @@
+@mixin absolution-progressbar {
+  .ui-progressbar {
+    margin: 5px 0px;
+
+    .ui-widget-header {
+      font-weight: bold;
+      text-align: center;
+      color: $ui-hover-color;
+      border-color: $ui-hover-border-color;
+      @include jquery-ui-background($ui-hover-background, $ui-hover-background-type);
+    }
+    @include jquery-ui-background($ui-default-background, $ui-default-background-type);
+  }
+}

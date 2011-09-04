@@ -1,0 +1,67 @@
+// Colors ----------------------------------------------------------------------
+
+$ui-blue: #049CDB;
+$ui-blueDark: #0064CD;
+$ui-green: #46A546;
+$ui-red: #9D261D;
+$ui-yellow: #FFC40D;
+$ui-orange: #F89406;
+$ui-pink: #C3325F;
+$ui-purple: #7A43B6;
+
+// Grays
+$ui-black:         #000; 
+$ui-gray-dark:      lighten($ui-black, 25%);
+$ui-gray:          lighten($ui-black, 50%);
+$ui-gray-light:     lighten($ui-black, 75%);
+$ui-gray-lighter:   lighten($ui-black, 90%);
+$ui-white:         #FFF;
+
+// Color Scheme
+$ui-base-color:     $ui-red;
+
+@function ui-complement($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return complement($base);
+}
+
+@function ui-split-positive($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, 158);
+}
+
+@function ui-split-negative($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, -158);
+}
+
+@function ui-triad-positive($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, 135);
+}
+
+@function ui-triad-negative($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, -135);
+}
+
+@function ui-square-positive($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, 90);
+}
+
+@function ui-square-negative($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, -90);
+}
+
+@function ui-analog-positive($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, 22);
+}
+
+@function ui-analog-negative($base: false) {
+  @if not $base { $base: $ui-base-color; }
+  @return adjust-hue($base, -22);
+}
+

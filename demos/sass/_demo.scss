@@ -1,0 +1,124 @@
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
+
+$test-blue: #049CDB;
+$test-blue-dark: #0064CD;
+$test-red: #9D261D;
+$test-orange: #F89406;
+$test-green: #46A546;
+
+body{ 
+  font: 62.5% Arial, Helvetica, sans-serif;
+  margin: 20px 0;
+}
+
+
+#container {
+  @include container;
+
+  #header, #footer {
+    @include column(24, true);
+    background-color: $test-blue-dark;
+    @include background-image(linear-gradient($test-blue, $test-blue-dark));
+    @include border-radius(5px);
+    color: white;
+    margin-bottom: 10px;
+    
+    h1 {
+      font-size: 2.0em;
+      color: white;
+      margin: 6px;
+      padding: 10px 0;
+    }
+    
+  }
+
+  // a {
+  //   color: $test-blue-dark;
+  //   &:hover {
+  //     color: $test-blue;
+  //   }
+  // }
+
+  #content {
+    @include column(18);
+    padding-top: 10px;
+  }
+
+  #sidebar {
+    @include column(6, true);
+
+    a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+    }
+
+    p, div {
+      font-size: 1.5em;
+      padding: 0.9em 0.7em;
+    }
+    // #toggle-css {
+    //   font-size: 1.5em;
+    //   padding: 0.9em 0.7em;
+    // }
+  }
+}
+
+.demoHeaders { 
+  margin-top: 2em; 
+  margin-bottom: 1em;
+}
+ul#icons { 
+  margin: 0; 
+  padding: 0;}
+ul#icons li { 
+  margin: 2px; 
+  position: relative; 
+  padding: 4px 0; 
+  cursor: pointer; 
+  float: left; 
+  list-style: none; }
+ul#icons span.ui-icon { 
+  float: left; 
+  margin: 0 4px; }
+.columnbox { 
+  width: 500px; }
+#eq span { 
+  height: 120px; 
+  float: left; 
+  margin: 15px; }
+#countries { width: 300px; }
+
+h1 {
+  font-size: 2.0em;
+  font-weight: bold;
+  color: $test-blue-dark;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h2#showing {
+  @include border-radius(5px);
+  // @include background-image(linear-gradient($test-blue, $test-blue-dark));
+  // @include background-image(linear-gradient(lighten($test-orange, 20%), $test-orange));
+  background-color: $test-green;
+  @include background-image(linear-gradient(lighten($test-green, 20%), $test-green));
+  color: darken($test-green, 18%);
+  padding: 0.9em;
+  span {
+    color: white;
+  }
+}
+
+p {
+  font-size: 1.3em;
+  padding: 5px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+

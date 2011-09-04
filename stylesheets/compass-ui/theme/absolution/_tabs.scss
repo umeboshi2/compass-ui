@@ -1,0 +1,68 @@
+@mixin absolution-tabs {
+  .ui-tabs {
+    padding: 0; 
+    @include border-radius(0px);
+
+    .ui-tabs-nav {
+      margin: 0px;
+      padding: 0px; 
+      border-width: 0px;
+      @include border-radius(0px);
+      border-bottom-size: $ui-default-border-width;
+      border-bottom-style: $ui-default-border-style;
+      border-bottom-color: $ui-default-border-color;
+      
+
+      li {
+        top: 0px;
+        margin: 0px;
+        border-width: 0px;
+        border-right-size: $ui-default-border-width;
+        border-right-style: $ui-default-border-style;
+        border-right-color: $ui-default-border-color;
+        
+        @include border-radius(0px);
+
+        a {
+          padding: .3em 1em;
+          color: inherit;
+        }
+
+        &.ui-tabs-selected {
+          padding-bottom: 0px;
+        }
+
+        &.ui-state-hover {
+          color: inherit;
+          @include jquery-ui-background(linear-gradient(#dadada, #b0b0b0), gradient);
+        }
+
+        &.ui-state-active,
+        &.ui-tabs-selected {
+          color: inherit;
+          @include jquery-ui-background(linear-gradient(#bcbcbc, #e4e4e4), gradient);
+        }
+      }
+    }
+
+    .ui-tabs-panel {
+      border-width: 0px;
+      @include border-radius(0px);
+    }
+
+    .ui-tabs-hide {
+      color: $ui-default-color;
+      border-width: $ui-default-border-width;
+      border-style: $ui-default-border-style;
+      border-color: $ui-default-border-color;
+      @include jquery-ui-background($ui-default-background, gradient);
+    }
+  }
+
+  .ui-tabs .ui-tabs-nav li a, /* obsolete, but required to overcome bug in Opera */
+  .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+    cursor: pointer;
+  }
+  
+}
+

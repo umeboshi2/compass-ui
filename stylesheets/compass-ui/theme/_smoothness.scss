@@ -1,0 +1,35 @@
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/opacity";
+@import "compass-ui";
+
+// Theme mixin that calls the relevant jQuery and theme mixins when appropriate. 
+@mixin smoothness-theme {
+  @include jquery-ui-theme;
+}
+
+
+// // Header
+$ui-header-background: #cccccc image-url("#{$ui-images-url}ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
+$ui-header-background-type: flat;
+
+// State-Default
+$ui-default-background: $ui-default-background-color image-url("#{$ui-images-url}ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
+$ui-default-background-type: flat;
+
+// State-Hover
+$ui-hover-background: $ui-hover-background-color image-url("#{$ui-images-url}ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x; 
+$ui-hover-background-type: flat;
+
+// State-Active
+$ui-active-background: #ffffff image-url("#{$ui-images-url}ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x; 
+$ui-active-background-type: flat;
+
+// State-Highlight
+$ui-highlight-background: #fbf9ee image-url("#{$ui-images-url}ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
+$ui-highlight-background-type: flat;
+
+// State-Error
+$ui-error-background: #fef1ec image-url("#{$ui-images-url}ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
+$ui-error-background-type: flat;
+
