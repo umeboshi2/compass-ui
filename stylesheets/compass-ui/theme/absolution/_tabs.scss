@@ -8,7 +8,7 @@
       padding: 0px; 
       border-width: 0px;
       @include border-radius(0px);
-      border-bottom-size: $ui-default-border-width;
+      border-bottom-width: $ui-default-border-width;
       border-bottom-style: $ui-default-border-style;
       border-bottom-color: $ui-default-border-color;
       
@@ -17,7 +17,7 @@
         top: 0px;
         margin: 0px;
         border-width: 0px;
-        border-right-size: $ui-default-border-width;
+        border-right-width: $ui-default-border-width;
         border-right-style: $ui-default-border-style;
         border-right-color: $ui-default-border-color;
         
