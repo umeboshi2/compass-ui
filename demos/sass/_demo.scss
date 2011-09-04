@@ -6,6 +6,9 @@ $test-blue-dark: #0064CD;
 $test-red: #9D261D;
 $test-orange: #F89406;
 $test-green: #46A546;
+$test-green-light: lighten($test-green, 45%);
+$test-green-medium: lighten($test-green, 30%);
+$test-green-dark: darken($test-green, 18%);
 
 body{ 
   font: 62.5% Arial, Helvetica, sans-serif;
@@ -102,14 +105,18 @@ h2 {
 
 h2#showing {
   @include border-radius(5px);
-  // @include background-image(linear-gradient($test-blue, $test-blue-dark));
-  // @include background-image(linear-gradient(lighten($test-orange, 20%), $test-orange));
   background-color: $test-green;
-  @include background-image(linear-gradient(lighten($test-green, 20%), $test-green));
-  color: darken($test-green, 18%);
+  @include background-image(linear-gradient($test-green-medium, $test-green));
+  color: $test-green-dark;
   padding: 0.9em;
   span {
     color: white;
+    display: block;
+  }
+  span.summary {
+    font-size: 0.7em;
+    color: #ffffff;
+    padding-top: 6px;
   }
 }
 

@@ -176,14 +176,19 @@ $(function(){
   // Switch styles 
   $('#toggle-css a').click(function() {
     var name = $(this).html();
+    var summary = $(this).attr('data-summary');
+    summary = name + '<br><span class="summary">' + summary + '</span>';
     $('link[rel=stylesheet]').attr({href: $(this).attr('rel') + '?' + Date.now() });
     $('h2#showing span')
       .fadeOut('slow', function() {
         $(this)
-          .html(name)
+          .html(summary)
           .fadeIn('slow');
       });
   });
+
+  // trigger a click on the first theme choice
+  $('#toggle-css a:first').click();
 
 });
 
