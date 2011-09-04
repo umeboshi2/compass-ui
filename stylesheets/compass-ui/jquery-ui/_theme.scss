@@ -79,6 +79,8 @@
 // Interaction states
 // -------------------------------------
 @mixin jquery-ui-interaction-states {
+
+  // default
   .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     border-width: $ui-default-border-width;
     border-style: $ui-default-border-style;
@@ -94,6 +96,7 @@
       color: $ui-default-link-color;
       text-decoration: none; } }
 
+  // hover
   .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
     border-width: $ui-hover-border-width;
     border-style: $ui-hover-border-style;
@@ -109,6 +112,23 @@
       color: $ui-hover-link-color;
       text-decoration: none; } }
 
+  // focus
+  .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border-width: $ui-focus-border-width;
+    border-style: $ui-focus-border-style;
+    border-color: $ui-focus-border-color;
+    @include jquery-ui-background($ui-focus-background, $ui-focus-background-type);
+    font-weight: $ui-focus-font-weight;
+    color: $ui-focus-color; }
+
+  .ui-state-hover a {
+    color: $ui-focus-link-color;
+    text-decoration: none;
+    &:hover {
+      color: $ui-focus-link-color;
+      text-decoration: none; } }
+
+  // active
   .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
     border-width: $ui-active-border-width;
     border-style: $ui-active-border-style;

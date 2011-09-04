@@ -93,6 +93,17 @@ $ui-hover-background-color: #dadada !default;
 $ui-hover-background: linear-gradient(#e4e4e4,#eaeaea) !default;
 $ui-hover-background-type: gradient !default;
 
+// State-Focus
+$ui-focus-border-width: 1px !default;
+$ui-focus-border-style: solid !default;
+$ui-focus-border-color: #999999 !default;
+$ui-focus-color: #212121 !default;
+$ui-focus-link-color: $ui-hover-color !default;
+$ui-focus-font-weight: normal !default;
+$ui-focus-background-color: #dadada !default;
+$ui-focus-background: linear-gradient(#e4e4e4,#eaeaea) !default;
+$ui-focus-background-type: gradient !default;
+
 // State-Active
 $ui-active-border-width: 1px !default;
 $ui-active-border-style: solid !default;
