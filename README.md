@@ -4,20 +4,26 @@ Compass-UI is a jQuery UI theme builder for the [compass][compass] CSS framework
 
 I recently worked on two projects that required use of the [jQuery UI][jqueryui]. However, designing a new theme from Themeroller or taking apart the generated CSS by hand proved to be tedious at best. The default themes did not fit our needs. So, I thought it might be useful to build a tool that could make generating jQuery UI themes easier. Compass-UI is an attempt to build that tool. 
 
-**This is a work-in-progress**. So, use at your own risk. 
+**This is a work-in-progress**.
 
-## Installation
+## Installation and Usage
 
-`gem install compass-ui`
+`(sudo) gem install compass-ui`
 
 or, in your Gemfile: `gem compass-ui`
 
 Then add `require 'compass-ui'` to your Compass config file. 
 
-To use one of the existing themes import it, e.g.: 
+To use one of the existing themes import it:
 
 ```sass
 @import "compass-ui/theme/absolution";
+```
+
+Then, include the theme when needed:
+
+```sass
+@include absolution-theme;
 ```
 
 ## Existing Themes
@@ -32,7 +38,7 @@ To use one of the existing themes import it, e.g.:
 
 * Dot Luv Theme - the gaudy Dot Luv theme as a proof-of-concept, by just changing default variables and adding background images. 
 
-## Usage 
+## Creating a New Theme 
 
 To create a new jQuery UI theme, simply create a new Sass file and import compass-ui:
 
@@ -40,16 +46,16 @@ To create a new jQuery UI theme, simply create a new Sass file and import compas
 @import "compass-ui";
 ```
 
-Then, in your own project, override any of the variables in the jquery-ui-base file with your own variables. 
+Then, in your own project, override any of the variables found in the jquery-ui-base file with your own variables. 
 
-**Please see the proof-of-concept Absolution Theme for a detailed example.** Even though the Absolution Theme has additional CSS, in many cases, I think just overriding variables found in the jquery-ui-base would be sufficient to create a brand-new theme. See the Smoothness and Dot Luv themes in the demos for examples.  
+**Please see the proof-of-concept Absolution Theme for a detailed example.** Even though the Absolution Theme has additional CSS, in many cases, I think just overriding variables found in the jquery-ui-base would be sufficient to create a brand-new theme. See the Smoothness and Dot Luv themes in the demos for examples of overriding  a few variables to create a new theme.  
 
-After you've imported it into your project, you'll need to @include the theme's mixin. 
+After you've imported it into your project, you'll need to @include the default theme's mixin. 
 
-For example, to include the Absolution theme: 
+Place this after your variable overrides. 
 
 ```sass
-@include absolution-theme;
+@include jquery-ui-base-theme;
 ```
 
 See the demos for a more detailed example. 
