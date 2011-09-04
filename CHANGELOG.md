@@ -2,6 +2,12 @@
 
 ### 0.0.3 - extracted from the compass-bearing project
 
+- Fix for absolution tab borders
+- Adding background color when using background-image in jquery-ui-background
+- Breaking out state-focus into it's own set
+- Adding font-weight variables and reorganizing link-colors
+- Adding extractions from compass-bearing to initialize compass-ui project
+
 ## 0.0.2 - part of the compass-bearing project
 
 - Switch to using image-url and relative theme url, instead of hard-coded images url
