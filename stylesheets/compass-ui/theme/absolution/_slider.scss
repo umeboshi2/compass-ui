@@ -10,7 +10,7 @@
         border-color: #b8b8b8;
         @include jquery-ui-background(#ffffff, linear-gradient(#ffffff, #cacbcc), image);
       }
-      &:hover {
+      &:focus {
         border-color: #b8b8b8;
         @include jquery-ui-background(#cacbcc, linear-gradient(#cacbcc, #ffffff), image);
       }

@@ -9,6 +9,6 @@
       border-color: $ui-hover-border-color;
       @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, $ui-hover-background-type);
     }
-    @include jquery-ui-background($ui-hover-background-color, $ui-default-background, $ui-default-background-type);
+    @include jquery-ui-background($ui-default-background-color, $ui-default-background, $ui-default-background-type);
   }
 }
