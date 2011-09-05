@@ -1,5 +1,9 @@
 # Compass-UI Changelog
 
+### Recent
+
+- Created gh-pages
+
 ### v0.0.4
 
 - Equating smoothness with jquery-ui-base theme when installing icons
