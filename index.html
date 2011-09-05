@@ -1,77 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
 
-  <title>patrickward/compass-ui @ GitHub</title>
+    <title>Compass-UI</title>
+    <link type="text/css" href="stylesheets/default.css" rel="stylesheet" />	
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+  </head>
+  <body class="ui-form">
+    <div id="container">
+      <div id="header">
+        <h1>Compass-UI Theme Tests</h1>
+      </div>
+      <div id="sidebar">
+        <h2 id="showing">
+          Currently Showing:
+          <span>jQuery-UI Base Theme</span>
+        </h2>
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #954b3e;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #6ab4c1; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #6ab4c1; }
-    h3 { text-align: center; color: #6ab4c1; }
-    a { color: #6ab4c1; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
+        <div id="toggle-css">
+          <strong>Choose a theme to test:</strong> 
+          <a href="#" rel="stylesheets/default.css"
+            data-summary="The jQuery UI Base Theme from Compass-UI">jQuery Base Theme</a>
+          <a href="#" rel="stylesheets/absolution.css"
+            data-summary="The Absolution Theme from Michaël Vanderheeren">Absolution Theme</a>
+          <a href="#" rel="stylesheets/smoothness.css"
+            data-summary="The Smoothness Theme from the jQuery UI Themeroller">Smoothness Theme</a>
+          <a href="#" rel="stylesheets/dot-luv.css"
+            data-summary="The gaudy Dot Luv Theme from the jQuery UI Themeroller">Dot Luv Theme</a>
+          <a href="#" rel="stylesheets/color-test.css"
+            data-summary="An external color test to demonstrate working with Compass-UI outside the gem itself">Color Test</a>
+        </div>
 
-<body>
-  <a href="http://github.com/patrickward/compass-ui"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+        <p>
+          <strong>Resources:</strong>
+          <a href="https://github.com/patrickward/compass-ui">Github Project</a>
+        </p>
 
-  <div id="container">
+      </div>
+      <div id="content">
+        <p>
+          Compass-UI is a jQuery UI theme builder for the Compass CSS authoring framework. 
+        </p>
+        <p>
+          This page is used to demonstrate and test the themes that have been built with it so far.
+        </p>
 
-    <div class="download">
-      <a href="http://github.com/patrickward/compass-ui/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/patrickward/compass-ui/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+        <p><strong>This is a work-in-progress. So, use it at your own risk.</strong></p>
+
+        <div id="demo-autocomplete">Loading...</div>
+        <div id="demo-buttons">Loading...</div>
+        <div id="demo-sliders">Loading...</div>
+        <div id="demo-highlights">Loading...</div>
+        <div id="demo-accordion">Loading...</div>
+        <div id="demo-tabs">Loading...</div>
+        <div id="demo-dialog">Loading...</div>
+        <div id="demo-datepicker">Loading...</div>
+        <div id="demo-progressbar">Loading...</div>
+        <div id="demo-icons">Loading...</div>
+        <div id="demo-overlay">Loading...</div>
+        <div id="demo-combinations">Loading...</div>
+        <div id="demo-form">Loading...</div>
+      </div>
     </div>
-
-    <h1><a href="http://github.com/patrickward/compass-ui">compass-ui</a>
-      <span class="small">by <a href="http://github.com/patrickward">patrickward</a></span></h1>
-
-    <div class="description">
-      jQuery UI theme builder for the Compass CSS Authoring Framework
-    </div>
-
-    <h2>Authors</h2>
-<p>Patrick Ward (patrick@patrickward.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Patrick Ward (patrick@patrickward.com)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/patrickward/compass-ui/zipball/master">zip</a> or
-      <a href="http://github.com/patrickward/compass-ui/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/patrickward/compass-ui</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/patrickward/compass-ui">patrickward/compass-ui</a>
-    </div>
-
-  </div>
-
-  
-</body>
+  </body>
 </html>
+
