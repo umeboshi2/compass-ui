@@ -1,0 +1,42 @@
+@mixin kindofblue-slider {
+  .ui-slider {
+    .ui-slider-handle {
+      color: $ui-default-color;
+      border-color: $ui-default-border-color;
+      
+      @include jquery-ui-background($ui-default-background-color, $ui-default-background, image);
+
+      &:hover {
+        border-color: #b8b8b8;
+        @include jquery-ui-background(#ffffff, linear-gradient(#ffffff, #cacbcc), image);
+        cursor: pointer;
+      }
+      &:focus {
+        border-color: #b8b8b8;
+        @include jquery-ui-background(#cacbcc, linear-gradient(#cacbcc, #ffffff), image);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .ui-slider-horizontal {
+    height: .6em;
+    .ui-slider-handle {
+      top: -.4em;
+      margin-left: -.6em;
+    }
+    .ui-widget-header { font-weight: bold; }
+    .ui-widget-handle { @include border-radius(0.7em); }
+  }
+
+  .ui-slider-vertical {
+    height: .6em;
+    .ui-slider-handle {
+      left: -.4em;
+    }
+    .ui-widget-header { font-weight: bold; }
+    .ui-widget-handle { @include border-radius(0.7em); }
+  }
+}
+
+

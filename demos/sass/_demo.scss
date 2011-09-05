@@ -74,10 +74,23 @@ body{
       font-size: 1.5em;
       padding: 0.9em 0.7em;
     }
-    // #toggle-css {
-    //   font-size: 1.5em;
-    //   padding: 0.9em 0.7em;
-    // }
+
+    h2#showing {
+      @include border-radius(5px);
+      background-color: $test-green;
+      @include background-image(linear-gradient($test-green-medium, $test-green));
+      color: $test-green-dark;
+      padding: 0.9em;
+      span {
+        color: white;
+        display: block;
+      }
+      span.summary {
+        font-size: 0.7em;
+        color: #ffffff;
+        padding-top: 6px;
+      }
+    }
   }
 }
 
@@ -129,23 +142,6 @@ h1 {
 h2 {
   font-size: 1.5em;
   font-weight: bold;
-}
-
-h2#showing {
-  @include border-radius(5px);
-  background-color: $test-green;
-  @include background-image(linear-gradient($test-green-medium, $test-green));
-  color: $test-green-dark;
-  padding: 0.9em;
-  span {
-    color: white;
-    display: block;
-  }
-  span.summary {
-    font-size: 0.7em;
-    color: #ffffff;
-    padding-top: 6px;
-  }
 }
 
 p {

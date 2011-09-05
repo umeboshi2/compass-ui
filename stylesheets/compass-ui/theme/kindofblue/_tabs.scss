@@ -1,0 +1,68 @@
+@mixin kindofblue-tabs {
+  .ui-tabs {
+    padding: 0; 
+    background: none;
+    @include border-radius(0px);
+    border-width: 0px;
+
+    .ui-tabs-nav.ui-widget-header {
+      margin: 0px;
+      padding: 0px;
+      background: none;
+      border-width: 0px;
+      @include border-radius(0px);
+
+      li {
+        top: 0px;
+        margin: 0px;
+        padding: 0px;
+        @include border-radius(0px);
+        @include border-top-radius(2px);
+
+        a {
+          padding: .3em 1em;
+          &:hover, &:active {
+            color: inherit;
+          }
+        }
+        &.ui-tabs-selected {
+          padding-bottom: 0px;
+        }
+
+        &.ui-state-hover {
+          color: inherit;
+        }
+
+        &.ui-state-active,
+        &.ui-tabs-selected {
+          color: inherit;
+        }
+      }
+    }
+
+    .ui-tabs-panel {
+      border-width: $ui-default-border-width;
+      border-style: $ui-default-border-style;
+      border-color: $ui-default-border-color;
+      @include jquery-ui-background($ui-default-background-color, $ui-default-background, image);
+      // border-width: 0px;
+      @include border-radius(0px);
+      @include border-bottom-radius(4px);
+    }
+
+    .ui-tabs-hide {
+      color: $ui-default-color;
+      border-width: $ui-default-border-width;
+      border-style: $ui-default-border-style;
+      border-color: $ui-default-border-color;
+      @include jquery-ui-background($ui-default-background-color, $ui-default-background, image);
+    }
+  }
+
+  .ui-tabs .ui-tabs-nav li a, /* obsolete, but required to overcome bug in Opera */
+  .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a {
+    cursor: pointer;
+  }
+  
+}
+

@@ -1,0 +1,65 @@
+@mixin kindofblue-accordion {
+  .ui-accordion {
+    .ui-accordion-header {
+      border-color: $ui-default-border-color;
+      @include border-radius(4px);
+
+      a {
+        color: inherit;
+      }
+
+      .ui-icon {
+        margin-top: -7px;
+        width: 13px;
+        height: 13px;
+        border-width: $ui-default-border-width;
+        border-style: $ui-default-border-style;
+        border-color: $ui-default-border-color;
+        background: #ffffff image-url("#{$ui-images-url}#{$ui-icons}");
+        background-position: -34px -2px;
+        @include border-radius(3px);
+        @include single-box-shadow(rgba(0,0,0,.1), 0px, -6px, 5px, true);
+      }
+    }
+
+    .ui-accordion-content {
+      border-width: 0px;
+      @include border-radius(0px);
+      background: none;
+      margin-top: 0px;
+    }
+
+    .ui-accordion-li-fix { display: inline; }
+    .ui-accordion-content-active { display: block; }
+    .ui-accordion-header-active { border-width: 0px; }
+
+
+    .ui-accordion-header.ui-state-hover .ui-icon {
+      background: #5e9ae2 image-url("#{$ui-images-url}#{$ui-icons-hover}");
+      background-position: -34px -2px;
+      border-width: $ui-hover-border-width;
+      border-style: $ui-hover-border-style;
+      border-color: $ui-hover-border-color;
+    }
+
+    .ui-accordion-header.ui-state-active .ui-icon, 
+    .ui-accordion-header.ui-state-hover.ui-state-active .ui-icon {
+      border-width: $ui-hover-border-width;
+      border-style: $ui-hover-border-style;
+      border-color: $ui-hover-border-color;
+      background: #5e9ae2 image-url("#{$ui-images-url}#{$ui-icons-hover}");
+      background-position: -66px -1px;
+    }
+
+    .ui-accordion-header,
+    .ui-accordion-header.ui-state-active,
+    .ui-accordion-header.ui-state-hover,
+    .ui-accordion-header.ui-state-focus {
+      color: $ui-default-color;
+      border-color: $ui-default-border-color;
+      @include jquery-ui-background($ui-default-background-color, $ui-default-background, $ui-default-background-type);
+    }
+  }
+  .ui-accordion-icons .ui-accordion-header a	{ padding-left: 2.6em; }
+
+}

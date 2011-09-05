@@ -1,0 +1,171 @@
+/** 
+ * The Kind of Blue Theme 
+ * was inspired by the Absolution Theme 
+ * by Michael Vanderheeren
+ * Copyright (c) 2010 Michael Vanderheeren
+ * 
+ * Please follow the his Github project to stay up to date on that theme:
+ * https://github.com/michaelvanderheeren/Absolution
+ * 
+ * Kind of Blue will be maintained within the compass-ui project. 
+ */
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+@import "compass/css3/opacity";
+@import "compass/css3/box-shadow";
+@import "compass/css3/text-shadow";
+
+@import "compass-ui";
+// @import "kindofblue/dialog";
+@import "kindofblue/accordion";
+// @import "kindofblue/autocomplete";
+// @import "kindofblue/datepicker";
+@import "kindofblue/slider";
+@import "kindofblue/tabs";
+
+@mixin kindofblue-theme {
+  @include jquery-ui-theme;
+  // @include kindofblue-dialog;
+  @include kindofblue-accordion;
+  // @include kindofblue-autocomplete;
+  // @include kindofblue-datepicker;
+  @include kindofblue-slider;
+  @include kindofblue-tabs;
+}
+
+// Default Radius
+$ui-border-radius: 5px;
+
+// Default Fonts
+$ui-font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+
+$ui-fixed-font-family: "andale mono", "lucida console", monospace;
+
+$ui-font-size: 1.0em;
+
+$ui-widget-font-size: 1em;
+
+$ui-form-font-size: 1em;
+
+$ui-header-font-weight: bold;
+
+// ------------------------------------------
+// Icon Images 
+// ------------------------------------------
+$ui-images-url: "kindofblue/";
+$ui-icons: "ui-icons_222222_256x240.png";
+$ui-icons-content: $ui-icons;
+$ui-icons-header: $ui-icons;
+$ui-icons-default: $ui-icons;
+$ui-icons-hover: "ui-icons_ffffff_256x240.png";
+$ui-icons-focus: $ui-icons-hover;
+$ui-icons-active: $ui-icons-hover;
+$ui-icons-highlight: $ui-icons;
+$ui-icons-error: $ui-icons-hover;
+
+// ------------------------------------------
+// Color Scheme
+// ------------------------------------------
+
+// $kob-blue-light: #5e9ae2;
+// $kob-blue-medium: #3570b8;
+// $kob-blue-dark: #2e63a5;
+$kob-blue-dark: #0064CD;
+$kob-blue-medium: lighten($kob-blue-dark, 5%);
+$kob-blue-light: lighten($kob-blue-medium, 20%);
+
+$kob-highlight-light: #F9C42E;
+$kob-highlight-light: lighten($kob-highlight-light, 10%);
+$kob-highlight-dark: darken($kob-highlight-light, 10%);
+$kob-highlight-color: #333333;
+
+// $kob-error-dark: ui-split-positive($kob-blue-dark);
+// // $kob-error-light: adjust-color($kob-error-dark, $saturation: -20%, $lightness: 45%); 
+// $kob-error-light: adjust-color($kob-error-dark, $saturation: -10%, $lightness: 35%); 
+// $kob-error-color: $kob-highlight-color;
+
+$kob-error-light: adjust-color($kob-highlight-light, $hue: -44);
+$kob-error-dark: darken($kob-error-light, 10%);
+// $kob-error-light: adjust-color($kob-error-dark, $saturation: -20%, $lightness: 45%); 
+$kob-error-color: $ui-white;
+
+// content
+$ui-content-border-color: #a9a9a9; 
+$ui-content-color: #333333;
+$ui-content-link-color: $ui-content-color;
+$ui-content-background-color: #fdfdfd;
+$ui-content-background: linear-gradient($ui-content-background-color,#ececec);
+$ui-content-background-type: image;
+
+// header
+$ui-header-border-color: $kob-blue-dark;
+$ui-header-color: $ui-white;
+$ui-header-link-color: $ui-header-color;
+$ui-header-background-color: $kob-blue-light;
+$ui-header-background: linear-gradient($kob-blue-light, $kob-blue-dark);
+$ui-header-background-type: image;
+
+
+// titlebar
+$ui-titlebar-color: #ffffff;
+$ui-titlebar-background-color: #4c4c4e;
+$ui-titlebar-background: linear-gradient($ui-titlebar-background-color, #282425);
+$ui-titlebar-background-type: image;
+
+// state-default
+$ui-default-border-color: #a9a9a9;
+$ui-default-color: #333333;
+$ui-default-background-color: #fdfdfd;
+$ui-default-background: linear-gradient($ui-default-background-color,#ececec);
+$ui-default-link-color: $ui-default-color;
+
+// state-hover
+$ui-hover-border-color: $kob-blue-dark;
+$ui-hover-color: #ffffff;
+$ui-hover-background-color: $kob-blue-light;
+$ui-hover-background: linear-gradient($ui-hover-background-color,$kob-blue-medium);
+$ui-hover-link-color: $ui-hover-color;
+
+// state-active
+$ui-active-border-color: $kob-blue-dark;
+$ui-active-color: #ffffff; 
+$ui-active-background-color: $kob-blue-medium;
+$ui-active-background: linear-gradient($ui-active-background-color,$kob-blue-light);
+$ui-active-link-color: $ui-active-color;
+
+// state-highlight
+$ui-highlight-border-color: $kob-highlight-dark;
+$ui-highlight-color: $kob-highlight-color;
+$ui-highlight-background-color: $kob-highlight-light; 
+$ui-highlight-background: $ui-highlight-background-color;
+$ui-highlight-background-type: default;
+$ui-highlight-link-color: $ui-highlight-color;
+
+// state-error
+$ui-error-border-color: $kob-error-dark;
+$ui-error-color: $kob-error-color;
+$ui-error-background-color: $kob-error-light; 
+$ui-error-background: $ui-error-background-color; 
+$ui-error-background-type: default;
+$ui-error-link-color: $ui-error-color;
+
+// state-primary
+
+// priority-secondary
+$ui-priority-secondary-opacity: .7;
+
+// state-disabled
+$ui-disabled-opacity: .35;
+
+// overlay
+$ui-overlay-opacity: .3;
+$ui-overlay-background-color: #aaaaaa;
+$ui-overlay-background: linear-gradient($ui-overlay-background-color,adjust-lightness($ui-overlay-background-color, -5));
+$ui-overlay-background-type: image;
+
+// shadow
+$ui-shadow-opacity: .3;
+$ui-shadow-background-color: #aaaaaa;
+$ui-shadow-background: linear-gradient($ui-shadow-background-color,adjust-lightness($ui-shadow-background-color, -5));
+$ui-shadow-background-type: image;
+
