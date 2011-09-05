@@ -1429,47 +1429,47 @@ button.ui-button::-moz-focus-inner {
 .ui-icon {
   width: 16px;
   height: 16px;
-  background-image: url('/images/absolution/ui-icons_222222_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_222222_256x240.png?1315220575');
 }
 
 /* line 203, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-widget-content .ui-icon {
-  background-image: url('/images/absolution/ui-icons_222222_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_222222_256x240.png?1315220575');
 }
 
 /* line 206, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-widget-header .ui-icon {
-  background-image: url('/images/absolution/ui-icons_222222_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_222222_256x240.png?1315220575');
 }
 
 /* line 209, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-state-default .ui-icon {
-  background-image: url('/images/absolution/ui-icons_222222_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_222222_256x240.png?1315220575');
 }
 
 /* line 212, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-state-hover .ui-icon {
-  background-image: url('/images/absolution/ui-icons_ffffff_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_ffffff_256x240.png?1315220575');
 }
 
 /* line 215, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-state-focus .ui-icon {
-  background-image: url('/images/absolution/ui-icons_ffffff_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_ffffff_256x240.png?1315220575');
 }
 
 /* line 218, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-state-active .ui-icon {
-  background-image: url('/images/absolution/ui-icons_ffffff_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_ffffff_256x240.png?1315220575');
 }
 
 /* line 221, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-state-highlight .ui-icon {
-  background-image: url('/images/absolution/ui-icons_222222_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_222222_256x240.png?1315220575');
 }
 
 /* line 224, ../../stylesheets/compass-ui/jquery-ui/_theme.scss */
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
-  background-image: url('/images/absolution/ui-icons_222222_256x240.png?1315220575');
+  background-image: url('images/absolution/ui-icons_222222_256x240.png?1315220575');
 }
 
 /* positioning */
