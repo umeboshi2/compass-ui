@@ -14,21 +14,22 @@
 @import "compass/css3/opacity";
 @import "compass/css3/box-shadow";
 @import "compass/css3/text-shadow";
+@import "compass/utilities/general/clearfix";
 
 @import "compass-ui";
-// @import "kindofblue/dialog";
+@import "kindofblue/dialog";
 @import "kindofblue/accordion";
-// @import "kindofblue/autocomplete";
-// @import "kindofblue/datepicker";
+@import "kindofblue/autocomplete";
+@import "kindofblue/datepicker";
 @import "kindofblue/slider";
 @import "kindofblue/tabs";
 
 @mixin kindofblue-theme {
   @include jquery-ui-theme;
-  // @include kindofblue-dialog;
+  @include kindofblue-dialog;
   @include kindofblue-accordion;
-  // @include kindofblue-autocomplete;
-  // @include kindofblue-datepicker;
+  @include kindofblue-autocomplete;
+  @include kindofblue-datepicker;
   @include kindofblue-slider;
   @include kindofblue-tabs;
 }
@@ -70,6 +71,9 @@ $ui-icons-error: $ui-icons-hover;
 // $kob-blue-light: #5e9ae2;
 // $kob-blue-medium: #3570b8;
 // $kob-blue-dark: #2e63a5;
+$kob-font-color: #333333; 
+$kob-shadow-color: #282425;
+
 $kob-blue-dark: #0064CD;
 $kob-blue-medium: lighten($kob-blue-dark, 5%);
 $kob-blue-light: lighten($kob-blue-medium, 20%);
@@ -77,21 +81,20 @@ $kob-blue-light: lighten($kob-blue-medium, 20%);
 $kob-highlight-light: #F9C42E;
 $kob-highlight-light: lighten($kob-highlight-light, 10%);
 $kob-highlight-dark: darken($kob-highlight-light, 10%);
-$kob-highlight-color: #333333;
-
-// $kob-error-dark: ui-split-positive($kob-blue-dark);
-// // $kob-error-light: adjust-color($kob-error-dark, $saturation: -20%, $lightness: 45%); 
-// $kob-error-light: adjust-color($kob-error-dark, $saturation: -10%, $lightness: 35%); 
-// $kob-error-color: $kob-highlight-color;
+$kob-highlight-color: $kob-font-color;
 
 $kob-error-light: adjust-color($kob-highlight-light, $hue: -44);
 $kob-error-dark: darken($kob-error-light, 10%);
-// $kob-error-light: adjust-color($kob-error-dark, $saturation: -20%, $lightness: 45%); 
 $kob-error-color: $ui-white;
+
+$kob-titlebar-light: lighten(#4c4c4e, 45%);
+$kob-titlebar-dark: darken($kob-titlebar-light, 10%);
+
+$kob-buttonpane-background-color: #dedede;
 
 // content
 $ui-content-border-color: #a9a9a9; 
-$ui-content-color: #333333;
+$ui-content-color: $kob-font-color;
 $ui-content-link-color: $ui-content-color;
 $ui-content-background-color: #fdfdfd;
 $ui-content-background: linear-gradient($ui-content-background-color,#ececec);
@@ -107,14 +110,14 @@ $ui-header-background-type: image;
 
 
 // titlebar
-$ui-titlebar-color: #ffffff;
-$ui-titlebar-background-color: #4c4c4e;
-$ui-titlebar-background: linear-gradient($ui-titlebar-background-color, #282425);
-$ui-titlebar-background-type: image;
+$ui-titlebar-color: $kob-font-color;
+$ui-titlebar-background-color: $ui-content-background-color;
+$ui-titlebar-background: darken($ui-titlebar-background-color,5%);
+$ui-titlebar-background-type: default;
 
 // state-default
 $ui-default-border-color: #a9a9a9;
-$ui-default-color: #333333;
+$ui-default-color: $kob-font-color;
 $ui-default-background-color: #fdfdfd;
 $ui-default-background: linear-gradient($ui-default-background-color,#ececec);
 $ui-default-link-color: $ui-default-color;
@@ -159,13 +162,13 @@ $ui-disabled-opacity: .35;
 
 // overlay
 $ui-overlay-opacity: .3;
-$ui-overlay-background-color: #aaaaaa;
+$ui-overlay-background-color: $kob-shadow-color;
 $ui-overlay-background: linear-gradient($ui-overlay-background-color,adjust-lightness($ui-overlay-background-color, -5));
 $ui-overlay-background-type: image;
 
 // shadow
 $ui-shadow-opacity: .3;
-$ui-shadow-background-color: #aaaaaa;
+$ui-shadow-background-color: $kob-shadow-color;
 $ui-shadow-background: linear-gradient($ui-shadow-background-color,adjust-lightness($ui-shadow-background-color, -5));
 $ui-shadow-background-type: image;
 

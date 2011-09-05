@@ -1,0 +1,90 @@
+@mixin kindofblue-dialog {
+  .ui-dialog {
+    border-color: #ffffff;
+    @include single-box-shadow($ui-shadow-background-color);
+
+    .ui-dialog-titlebar-close {
+      right: .6em;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #cccccc;
+      padding: 0px;
+    }
+
+    .ui-dialog-content {
+      padding: 1em;
+
+      .ui-tabs {
+        margin: -1em;
+      }
+
+      hr {
+        margin: 1em -1em 1em -1em;
+        border: 0px;
+        border-top: 1px solid #c1c1c1 !important;
+      }
+
+    }
+
+    .ui-dialog-buttonpane {
+      background: $kob-buttonpane-background-color;
+    }
+
+    .ui-dialog-titlebar {
+      padding: .5em 1em .3em;
+      position: relative; 
+      @include border-bottom-radius(0px);
+      border: 0px;
+      border-bottom: 1px solid #c1c1c1;
+      font-size: 1.5em;
+      font-weight: bold;
+      background: none;
+      color: $ui-titlebar-color;
+
+      .ui-dialog-titlebar-close {
+        background: none;
+        color: $ui-titlebar-color;
+
+        .ui-icon {
+          background-image: image-url("#{$ui-images-url}#{$ui-icons}"); 
+        }
+
+        &.ui-state-active {
+          padding: 0px;
+          color: $ui-active-color;
+          border-width: $ui-active-border-width;
+          border-style: $ui-active-border-style;
+          border-color: $ui-active-border-color;
+          @include jquery-ui-background($ui-active-background-color, $ui-active-background, $ui-active-background-type);
+          .ui-icon {
+            background-image: image-url("#{$ui-images-url}#{$ui-icons-hover}"); 
+          }
+        }
+
+        &.ui-state-hover {
+          color: $ui-hover-color;
+          border-width: $ui-hover-border-width;
+          border-style: $ui-hover-border-style;
+          border-color: $ui-hover-border-color;
+          @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, $ui-hover-background-type);
+          .ui-icon {
+            background-image: image-url("#{$ui-images-url}#{$ui-icons-hover}"); 
+          }
+        }
+      }
+    }
+
+    .ui-resizable-se {
+      width: 14px;
+      height: 14px;
+      right: 1px;
+      bottom: 1px;
+    }
+
+    .ui-icon-grip-diagonal-se {
+      background-position: -64px - 224px;
+      display: none;
+    }
+  }
+}
+
