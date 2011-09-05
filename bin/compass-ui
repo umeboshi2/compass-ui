@@ -11,11 +11,14 @@ class CompassUI < Thor
   desc "install THEME [-d DIRECTORY]", "Installs the icons from one of the available themes."
   method_options %w(directory -d) => :string
   def install(theme)
+    # smoothness and jquery-ui use the same set
+    theme_name = theme
+    theme = (theme == 'smoothness' ? 'jquery-ui-base' : theme)
     install_dir = options[:directory] 
     install_dir ||= 'images'
     source_dir = File.join(CompassUI.source_root, theme)
     if File.exists?(source_dir) and File.directory?(source_dir)
-      directory(theme, File.join(install_dir, theme))
+      directory(theme, File.join(install_dir, theme_name))
     else
       say "Unable to find theme: #{theme}!", Thor::Shell::Color::RED
     end
