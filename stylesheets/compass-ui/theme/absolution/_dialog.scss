@@ -41,7 +41,7 @@
 
       .ui-dialog-titlebar-close {
         border-color: #000000;
-        @include jquery-ui-background(#6a6b6e, linear-gradient(#6a6b6e, #3e3e3e), gradient);
+        @include jquery-ui-background(#6a6b6e, linear-gradient(#6a6b6e, #3e3e3e), image);
         color: $ui-titlebar-color;
 
         .ui-icon {

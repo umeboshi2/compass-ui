@@ -34,13 +34,13 @@
 
         &.ui-state-hover {
           color: inherit;
-          @include jquery-ui-background(#dadada, linear-gradient(#dadada, #b0b0b0), gradient);
+          @include jquery-ui-background(#dadada, linear-gradient(#dadada, #b0b0b0), image);
         }
 
         &.ui-state-active,
         &.ui-tabs-selected {
           color: inherit;
-          @include jquery-ui-background(#bcbcbc, linear-gradient(#bcbcbc, #e4e4e4), gradient);
+          @include jquery-ui-background(#bcbcbc, linear-gradient(#bcbcbc, #e4e4e4), image);
         }
       }
     }
@@ -55,7 +55,7 @@
       border-width: $ui-default-border-width;
       border-style: $ui-default-border-style;
       border-color: $ui-default-border-color;
-      @include jquery-ui-background($ui-default-background-color, $ui-default-background, gradient);
+      @include jquery-ui-background($ui-default-background-color, $ui-default-background, image);
     }
   }
 

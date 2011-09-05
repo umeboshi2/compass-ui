@@ -36,8 +36,10 @@
   @include jquery-ui-overlays;
 }
 
-@mixin jquery-ui-background($background-color, $background, $type: flat) {
-  @if $type == flat {
+@mixin jquery-ui-background($background-color, $background, $type: default) {
+  @if $type == default {
+    background: $background;
+  } @else if $type == flat {
     background: $background;
   } @else {
     background: $background-color;

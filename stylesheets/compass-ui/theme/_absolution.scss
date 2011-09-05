@@ -73,10 +73,10 @@ $ui-content-border-color: #a9a9a9;
 $ui-content-color: #333333;
 $ui-content-link-color: $ui-content-color;
 $ui-content-background-color: #fdfdfd;
-// If the background is flat, add a full background description: 
+// If the background is default, add a full background description: 
 // $ui-content-background: #ffffff url(...);
 $ui-content-background: linear-gradient($ui-content-background-color,#ececec);
-$ui-content-background-type: gradient;
+$ui-content-background-type: image;
 
 // header
 $ui-header-border-color: $ui-content-border-color;
@@ -89,7 +89,7 @@ $ui-header-background: $ui-content-background;
 $ui-titlebar-color: #ffffff;
 $ui-titlebar-background-color: #4c4c4e;
 $ui-titlebar-background: linear-gradient($ui-titlebar-background-color, #282425);
-$ui-titlebar-background-type: gradient;
+$ui-titlebar-background-type: image;
 
 
 // state-default
@@ -118,7 +118,7 @@ $ui-highlight-border-color: #8b9fc2;
 $ui-highlight-color: #363636;
 $ui-highlight-background-color: #7cc5e3;
 $ui-highlight-background: $ui-highlight-background-color;
-$ui-highlight-background-type: flat;
+$ui-highlight-background-type: default;
 $ui-highlight-link-color: $ui-highlight-color;
 
 // state-error
@@ -126,7 +126,7 @@ $ui-error-border-color: #953737;
 $ui-error-color: #363636;
 $ui-error-background-color: #f35757;
 $ui-error-background: $ui-error-background-color; 
-$ui-error-background-type: flat;
+$ui-error-background-type: default;
 $ui-error-link-color: $ui-error-color;
 
 // state-primary
@@ -141,11 +141,11 @@ $ui-disabled-opacity: .35;
 $ui-overlay-opacity: .3;
 $ui-overlay-background-color: #aaaaaa;
 $ui-overlay-background: linear-gradient($ui-overlay-background-color,adjust-lightness($ui-overlay-background-color, -5));
-$ui-overlay-background-type: gradient;
+$ui-overlay-background-type: image;
 
 // shadow
 $ui-shadow-opacity: .3;
 $ui-shadow-background-color: #aaaaaa;
 $ui-shadow-background: linear-gradient($ui-shadow-background-color,adjust-lightness($ui-shadow-background-color, -5));
-$ui-shadow-background-type: gradient;
+$ui-shadow-background-type: image;
 

@@ -23,14 +23,13 @@ $ui-widget-font-size: 1em !default;
 
 $ui-form-font-size: 1em !default;
 
-
 $ui-font-color: #222222 !default;
 
 // ------------------------------------------
 // Icon Images 
 // ------------------------------------------
 
-// Location of the icons and other them related images. Note that this 
+// Location of the icons and other theme related images. Note that this 
 // is relative to the images directory as defined in the compass config.rb file. 
 $ui-images-url: "jquery-ui-base/" !default;
 
@@ -49,7 +48,6 @@ $ui-icons-error: "ui-icons_cd0a0a_256x240.png" !default;
 // Color Scheme
 // ------------------------------------------
 
-
 // Content
 $ui-content-border-width: 1px !default;
 $ui-content-border-style: solid !default;
@@ -57,7 +55,7 @@ $ui-content-border-color: #aaaaaa !default;
 $ui-content-color: $ui-font-color !default;
 $ui-content-background-color: $ui-white !default;
 $ui-content-background: $ui-white !default;
-$ui-content-background-type: flat !default;
+$ui-content-background-type: default !default;
 $ui-content-link-color: $ui-content-color !default;
 
 // Header
@@ -69,7 +67,7 @@ $ui-header-link-color: $ui-header-color !default;
 $ui-header-font-weight: bold !default;
 $ui-header-background-color: #cccccc !default;
 $ui-header-background: linear-gradient(#e2e2e2,#cccccc) !default;
-$ui-header-background-type: gradient !default;
+$ui-header-background-type: image !default;
 
 // State-Default
 $ui-default-border-width: 1px !default;
@@ -80,7 +78,7 @@ $ui-default-link-color: $ui-default-color !default;
 $ui-default-font-weight: normal !default;
 $ui-default-background-color: #e6e6e6 !default;
 $ui-default-background: linear-gradient(#ededed,#f1f1f1) !default;
-$ui-default-background-type: gradient !default;
+$ui-default-background-type: image !default;
 
 // State-Hover
 $ui-hover-border-width: 1px !default;
@@ -91,7 +89,7 @@ $ui-hover-link-color: $ui-hover-color !default;
 $ui-hover-font-weight: normal !default;
 $ui-hover-background-color: #dadada !default;
 $ui-hover-background: linear-gradient(#e4e4e4,#eaeaea) !default;
-$ui-hover-background-type: gradient !default;
+$ui-hover-background-type: image !default;
 
 // State-Focus
 $ui-focus-border-width: $ui-hover-border-width !default;
@@ -113,7 +111,7 @@ $ui-active-link-color: $ui-active-color !default;
 $ui-active-font-weight: normal !default;
 $ui-active-background-color: #ffffff !default;
 $ui-active-background: linear-gradient(#fefefe,#ffffff) !default;
-$ui-active-background-type: gradient !default;
+$ui-active-background-type: image !default;
 
 // State-Highlight
 $ui-highlight-border-width: 1px !default;
@@ -123,7 +121,7 @@ $ui-highlight-color: #363636 !default;
 $ui-highlight-link-color: $ui-highlight-color !default;
 $ui-highlight-background-color: #fbf9ee !default;
 $ui-highlight-background: linear-gradient(#fcfaf1, #fbfaf3) !default;
-$ui-highlight-background-type: gradient !default;
+$ui-highlight-background-type: image !default;
 
 // State-Error
 $ui-error-border-width: 1px !default;
@@ -133,7 +131,7 @@ $ui-error-color: #cd0a0a !default;
 $ui-error-link-color: $ui-default-color !default;
 $ui-error-background-color: #fef1ec !default;
 $ui-error-background: linear-gradient(#fef6f3, #fef8f6) !default;
-$ui-error-background-type: gradient !default;
+$ui-error-background-type: image !default;
 
 // State-Primary
 $ui-priority-font-weight: bold !default;
@@ -149,12 +147,12 @@ $ui-disabled-opacity: .35 !default;
 $ui-overlay-opacity: .3 !default;
 $ui-overlay-background-color: #aaaaaa !default;
 $ui-overlay-background: $ui-overlay-background-color !default;
-$ui-overlay-background-type: flat !default;
+$ui-overlay-background-type: default !default;
 
 // Shadow
 $ui-shadow-opacity: .3 !default;
 $ui-shadow-background-color: #aaaaaa !default;
 $ui-shadow-background: $ui-shadow-background-color !default;
-$ui-shadow-background-type: flat !default;
+$ui-shadow-background-type: default !default;
 
 

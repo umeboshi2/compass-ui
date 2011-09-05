@@ -42,7 +42,7 @@ $ui-content-border-color: #000000;
 $ui-content-color: $ui-font-color;
 $ui-content-background-color: #111111;
 $ui-content-background: #111111 image-url("#{$ui-images-url}ui-bg_gloss-wave_20_111111_500x100.png") 50% top repeat-x;
-$ui-content-background-type: flat;
+$ui-content-background-type: default;
 $ui-content-link-color: $ui-content-color;
 
 // Header
@@ -50,7 +50,7 @@ $ui-header-border-color: #0b3e6f;
 $ui-header-color: #f6f6f6; 
 $ui-header-background-color: #0b3e6f;
 $ui-header-background: #0b3e6f image-url("#{$ui-images-url}ui-bg_diagonals-thick_15_0b3e6f_40x40.png") 50% 50% repeat;
-$ui-header-background-type: flat;
+$ui-header-background-type: default;
 $ui-header-link-color: $ui-header-color;
 
 // State-Default
@@ -58,7 +58,7 @@ $ui-default-border-color: #333333;
 $ui-default-color: #ffffff;
 $ui-default-background-color: #333333;
 $ui-default-background: #333333 image-url("#{$ui-images-url}ui-bg_dots-small_20_333333_2x2.png") 50% 50% repeat;
-$ui-default-background-type: flat;
+$ui-default-background-type: default;
 $ui-default-link-color: $ui-default-color;
 
 // State-Hover
@@ -66,7 +66,7 @@ $ui-hover-border-color: #222222;
 $ui-hover-color: #ffffff;
 $ui-hover-background-color: #00498f;
 $ui-hover-background: #00498f image-url("#{$ui-images-url}ui-bg_dots-small_40_00498f_2x2.png") 50% 50% repeat;
-$ui-hover-background-type: flat;
+$ui-hover-background-type: default;
 $ui-hover-link-color: $ui-hover-color;
 
 // State-Active
@@ -74,7 +74,7 @@ $ui-active-border-color: #096ac8;
 $ui-active-color: #75abff;
 $ui-active-background-color: #292929;
 $ui-active-background: #292929 image-url("#{$ui-images-url}ui-bg_flat_40_292929_40x100.png") 50% 50% repeat-x;
-$ui-active-background-type: flat;
+$ui-active-background-type: default;
 $ui-active-link-color: $ui-active-color;
 
 // State-Highlight
@@ -82,7 +82,7 @@ $ui-highlight-border-color: #052f57;
 $ui-highlight-color: #ffffff;
 $ui-highlight-background-color: #0b58a2;
 $ui-highlight-background: #0b58a2 image-url("#{$ui-images-url}ui-bg_dots-medium_30_0b58a2_4x4.png") 50% 50% repeat;
-$ui-highlight-background-type: flat;
+$ui-highlight-background-type: default;
 $ui-highlight-link-color: $ui-highlight-color;
 
 // State-Error
@@ -90,7 +90,7 @@ $ui-error-border-color: #cd0a0a;
 $ui-error-color: #ffffff;
 $ui-error-background-color: #a32d00;
 $ui-error-background: #a32d00 image-url("#{$ui-images-url}ui-bg_dots-small_30_a32d00_2x2.png") 50% 50% repeat;
-$ui-error-background-type: flat;
+$ui-error-background-type: default;
 $ui-error-link-color: $ui-default-color;
 
 // State-Primary
@@ -105,11 +105,11 @@ $ui-disabled-opacity: .35;
 $ui-overlay-opacity: .3;
 $ui-overlay-background-color: #aaaaaa;
 $ui-overlay-background: $ui-overlay-background-color;
-$ui-overlay-background-type: flat;
+$ui-overlay-background-type: default;
 
 // Shadow
 $ui-shadow-opacity: .3;
 $ui-shadow-background-color: #aaaaaa;
 $ui-shadow-background: $ui-shadow-background-color;
-$ui-shadow-background-type: flat;
+$ui-shadow-background-type: default;
 

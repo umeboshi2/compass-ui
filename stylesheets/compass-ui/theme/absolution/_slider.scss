@@ -4,15 +4,15 @@
       color: $ui-default-color;
       border-color: $ui-default-border-color;
       
-      @include jquery-ui-background($ui-default-background-color, $ui-default-background, gradient);
+      @include jquery-ui-background($ui-default-background-color, $ui-default-background, image);
 
       &:hover {
         border-color: #b8b8b8;
-        @include jquery-ui-background(#ffffff, linear-gradient(#ffffff, #cacbcc), gradient);
+        @include jquery-ui-background(#ffffff, linear-gradient(#ffffff, #cacbcc), image);
       }
       &:hover {
         border-color: #b8b8b8;
-        @include jquery-ui-background(#cacbcc, linear-gradient(#cacbcc, #ffffff), gradient);
+        @include jquery-ui-background(#cacbcc, linear-gradient(#cacbcc, #ffffff), image);
       }
     }
   }
@@ -25,7 +25,7 @@
     }
     .ui-widget-header {
       color: #ffffff;
-      @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, gradient);
+      @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, image);
     }
 
     .ui-widget-header { font-weight: bold; }
@@ -39,7 +39,7 @@
     }
     .ui-widget-header {
       color: #ffffff;
-      @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, gradient);
+      @include jquery-ui-background($ui-hover-background-color, $ui-hover-background, image);
     }
 
     .ui-widget-header { font-weight: bold; }

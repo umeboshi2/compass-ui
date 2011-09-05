@@ -11,25 +11,25 @@
 
 // // Header
 $ui-header-background: #cccccc image-url("#{$ui-images-url}ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
-$ui-header-background-type: flat;
+$ui-header-background-type: default;
 
 // State-Default
 $ui-default-background: $ui-default-background-color image-url("#{$ui-images-url}ui-bg_glass_75_e6e6e6_1x400.png") 50% 50% repeat-x;
-$ui-default-background-type: flat;
+$ui-default-background-type: default;
 
 // State-Hover
 $ui-hover-background: $ui-hover-background-color image-url("#{$ui-images-url}ui-bg_glass_75_dadada_1x400.png") 50% 50% repeat-x; 
-$ui-hover-background-type: flat;
+$ui-hover-background-type: default;
 
 // State-Active
 $ui-active-background: #ffffff image-url("#{$ui-images-url}ui-bg_glass_65_ffffff_1x400.png") 50% 50% repeat-x; 
-$ui-active-background-type: flat;
+$ui-active-background-type: default;
 
 // State-Highlight
 $ui-highlight-background: #fbf9ee image-url("#{$ui-images-url}ui-bg_glass_55_fbf9ee_1x400.png") 50% 50% repeat-x;
-$ui-highlight-background-type: flat;
+$ui-highlight-background-type: default;
 
 // State-Error
 $ui-error-background: #fef1ec image-url("#{$ui-images-url}ui-bg_glass_95_fef1ec_1x400.png") 50% 50% repeat-x;
-$ui-error-background-type: flat;
+$ui-error-background-type: default;
 
