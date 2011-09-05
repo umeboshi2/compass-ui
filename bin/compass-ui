@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+require 'thor'
+
+class CompassUI < Thor
+  include Thor::Actions
+  
+  def self.source_root
+    File.join(File.dirname(__FILE__), '..', 'templates', 'images')
+  end
+
+  desc "install THEME [-d DIRECTORY]", "Installs the icons from one of the available themes."
+  method_options %w(directory -d) => :string
+  def install(theme)
+    install_dir = options[:directory] 
+    install_dir ||= 'images'
+    source_dir = File.join(CompassUI.source_root, theme)
+    if File.exists?(source_dir) and File.directory?(source_dir)
+      directory(theme, File.join(install_dir, theme))
+    else
+      say "Unable to find theme: #{theme}!", Thor::Shell::Color::RED
+    end
+  end
+
+  desc "list", "Lists the available icon themes."
+  def list
+    say 'Available icon themes:', Thor::Shell::Color::CYAN
+    Dir.foreach(CompassUI.source_root) do |dir|
+      next if ['.','..'].include?(dir)
+      say dir unless !File.directory?(File.join(CompassUI.source_root, dir))
+    end
+  end
+end
+
+CompassUI.start

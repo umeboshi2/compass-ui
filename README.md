@@ -26,6 +26,8 @@ Then, include the theme when needed:
 @include absolution-theme;
 ```
 
+## Installing Theme Files 
+
 ## Existing Themes
 
 * jQuery UI - Base Theme (import with `@import "compass-ui/theme/jquery-ui-base"`).

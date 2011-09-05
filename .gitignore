@@ -4,7 +4,6 @@ Gemfile.lock
 *.swp
 *~
 .DS_Store
-bin/*
 *.gem
 demos/stylesheets/
 demos/.sass-cache
