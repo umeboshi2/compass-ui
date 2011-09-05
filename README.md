@@ -85,12 +85,11 @@ See the demos for a more detailed example.
 Examples: 
 
 ```sass
-// Using the default background type to explicity set a background
+// Using the default background type to explicitly set a background
 $ui-header-background: #cccccc image-url("#{$ui-images-url}ui-bg_highlight-soft_75_cccccc_1x100.png") 50% 50% repeat-x;
 $ui-header-background-type: default;
 
 // Using the image background type to create a linear gradient 
-
 $ui-default-background-color: #e6e6e6;
 $ui-default-background: linear-gradient(#ededed,#f1f1f1);
 $ui-default-background-type: image;
