@@ -86,12 +86,12 @@ $kob-highlight-dark: darken($kob-highlight-light, 10%);
 $kob-highlight-color: $kob-font-color;
 
 $kob-error-light: adjust-color($kob-highlight-light, $hue: -44);
-$kob-error-dark: darken($kob-error-light, 10%);
+$kob-error-dark: darken($kob-error-light, 30%);
 $kob-error-color: $ui-white;
 
 $kob-safe-light: adjust-color($kob-highlight-light, $hue: 45, $lightness: -22%);
 $kob-safe-dark: darken($kob-safe-light, 10%);
-$kob-safe-color: $kob-safe-dark;
+$kob-safe-color: darken($kob-safe-dark, 5%);
 
 $kob-buttonpane-background-color: #dedede;
 
