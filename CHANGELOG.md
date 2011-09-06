@@ -1,8 +1,11 @@
 # Compass-UI Changelog
 
-### Recent
+### v0.0.5
 
-- Created gh-pages
+- Fixed Date.now error in IE for demos
+- Added Kind of Blue Theme
+- Fixed background on absolution progressbar and focus on absolution slider
+- Created gh-pages branch
 
 ### v0.0.4
 
