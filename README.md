@@ -44,15 +44,15 @@ $ compass-ui install smoothness -d "app/assets/images"
 
 ## Existing Themes
 
-* jQuery UI - Base Theme (import with `@import "compass-ui/theme/jquery-ui-base"`).
+* jQuery UI - Base Theme (`@import "compass-ui/theme/jquery-ui-base"`): The base theme from which all others are derived.
 
-* Absolution Theme (import with `@import "compass-ui/theme/absolution"`). 
+* Kind of Blue Theme (`@import "compass-ui/theme/kindofblue"`): A simple theme I created that was inspired by Absolution and currently in use for one of my projects. Little IE support. 
 
-    I've ported [Michaël Vanderheeren's][mvan] wonderful [Absolution Theme](https://github.com/michaelvanderheeren/Absolution) over to Compass/Sass as a proof-of-concept. However, please follow him if you'd like to keep up with his improvements on that theme. 
+* Absolution Theme (`@import "compass-ui/theme/absolution"`): I've ported [Michaël Vanderheeren's][mvan] wonderful [Absolution Theme](https://github.com/michaelvanderheeren/Absolution) over to Compass/Sass as a proof-of-concept. However, please follow him if you'd like to keep up with his improvements on that theme. 
 
-* Smoothness Theme - the jQuery UI plain gem in just a few lines. 
+* Smoothness Theme (`@import "compass-ui/theme/smoothness`"): the jQuery UI plain gem in just a few lines. 
 
-* Dot Luv Theme - the gaudy Dot Luv theme as a proof-of-concept, by just changing default variables and adding background images. 
+* Dot Luv Theme (`@import "compass-ui/theme/dot-luv"`): the gaudy Dot Luv theme as a proof-of-concept, by just changing default variables and adding background images. 
 
 ## Creating a New Theme 
 
