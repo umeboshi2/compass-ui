@@ -1,0 +1,171 @@
+@import "compass/css3/images";
+@import "compass/css3/border-radius";
+
+$test-blue: #049CDB;
+$test-blue-dark: #0064CD;
+$test-red: #9D261D;
+$test-orange: #F89406;
+$test-green: #46A546;
+$test-green-light: lighten($test-green, 45%);
+$test-green-medium: lighten($test-green, 30%);
+$test-green-dark: darken($test-green, 18%);
+
+body{ 
+  font: 62.5% "Trebuchet MS", Helvetica, Arial, sans-serif;
+  // font: 100% "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#container {
+  // @include container;
+  margin: 20px auto;
+  // width: 60%;
+  width: 90%;
+  max-width: 960px;
+
+  #header, #footer {
+    // @include column(24, true);
+    margin: 0 auto 20px; 
+    // width: 93.75%; /* 900px / 960px */
+    width: 100%;
+
+    background-color: $test-blue-dark;
+    @include background-image(linear-gradient($test-blue, $test-blue-dark));
+    @include border-radius(5px);
+    color: white;
+    margin-bottom: 10px;
+    
+    h1 {
+      font-size: 2.0em;
+      color: white;
+      margin: 6px;
+      padding: 10px 0;
+      text-transform: uppercase;
+    }
+    
+  }
+
+  // a {
+  //   color: $test-blue-dark;
+  //   &:hover {
+  //     color: $test-blue;
+  //   }
+  // }
+
+  #content {
+    // @include column(18);
+    padding-top: 10px;
+    float: left; 
+    width: 80%; /* 566px / 900px */
+  }
+
+  #sidebar {
+    // @include column(6, true);
+    float: right;
+    width: 20%; /* 331px / 900px */
+
+    a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+    }
+
+    p, div {
+      font-size: 1.5em;
+      padding: 0.9em 0.7em;
+    }
+
+    h2#showing {
+      @include border-radius(5px);
+      background-color: $test-green;
+      @include background-image(linear-gradient($test-green-medium, $test-green));
+      color: $test-green-dark;
+      padding: 0.9em;
+      span {
+        color: white;
+        display: block;
+      }
+      span.summary {
+        font-size: 0.7em;
+        color: #ffffff;
+        padding-top: 6px;
+      }
+    }
+
+    #toggle-css {
+      a {
+        color: $test-blue-dark;
+        text-decoration: none;
+        padding: 5px 0 5px 5px;
+        &:hover {
+          background: $test-blue-dark;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// media queries
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px;
+    width: auto;
+
+    #sidebar, #content, #header, #footer {
+      margin: 0 0 20px;
+      width: 100%;
+    }
+  }
+}
+
+
+.demoHeaders { 
+  margin-top: 2em; 
+  margin-bottom: 1em;
+}
+ul#icons { 
+  margin: 0; 
+  padding: 0;}
+ul#icons li { 
+  margin: 2px; 
+  position: relative; 
+  padding: 4px 0; 
+  cursor: pointer; 
+  float: left; 
+  list-style: none; }
+ul#icons span.ui-icon { 
+  float: left; 
+  margin: 0 4px; }
+.columnbox { 
+  width: 500px; }
+#eq span { 
+  height: 120px; 
+  float: left; 
+  margin: 15px; }
+#countries { width: 300px; }
+
+h1 {
+  font-size: 2.0em;
+  font-weight: bold;
+  color: $test-blue-dark;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.3em;
+  padding: 5px 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
