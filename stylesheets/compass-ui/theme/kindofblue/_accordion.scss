@@ -35,7 +35,7 @@
 
 
     .ui-accordion-header.ui-state-hover .ui-icon {
-      background: #5e9ae2 image-url("#{$ui-images-url}#{$ui-icons-hover}");
+      background: $ui-hover-background-color image-url("#{$ui-images-url}#{$ui-icons-hover}");
       background-position: -34px -2px;
       border-width: $ui-hover-border-width;
       border-style: $ui-hover-border-style;
@@ -44,11 +44,11 @@
 
     .ui-accordion-header.ui-state-active .ui-icon, 
     .ui-accordion-header.ui-state-hover.ui-state-active .ui-icon {
+      background: $ui-hover-background-color image-url("#{$ui-images-url}#{$ui-icons-hover}");
+      background-position: -66px -1px;
       border-width: $ui-hover-border-width;
       border-style: $ui-hover-border-style;
       border-color: $ui-hover-border-color;
-      background: #5e9ae2 image-url("#{$ui-images-url}#{$ui-icons-hover}");
-      background-position: -66px -1px;
     }
 
     .ui-accordion-header,

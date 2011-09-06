@@ -23,6 +23,7 @@
 @import "kindofblue/datepicker";
 @import "kindofblue/slider";
 @import "kindofblue/tabs";
+@import "kindofblue/color_extensions";
 
 @mixin kindofblue-theme {
   @include jquery-ui-theme;
@@ -32,6 +33,7 @@
   @include kindofblue-datepicker;
   @include kindofblue-slider;
   @include kindofblue-tabs;
+  @include kindofblue-color-extensions;
 }
 
 // Default Radius
@@ -87,8 +89,9 @@ $kob-error-light: adjust-color($kob-highlight-light, $hue: -44);
 $kob-error-dark: darken($kob-error-light, 10%);
 $kob-error-color: $ui-white;
 
-$kob-titlebar-light: lighten(#4c4c4e, 45%);
-$kob-titlebar-dark: darken($kob-titlebar-light, 10%);
+$kob-safe-light: adjust-color($kob-highlight-light, $hue: 45, $lightness: -22%);
+$kob-safe-dark: darken($kob-safe-light, 10%);
+$kob-safe-color: $kob-safe-dark;
 
 $kob-buttonpane-background-color: #dedede;
 
@@ -111,9 +114,12 @@ $ui-header-background-type: image;
 
 // titlebar
 $ui-titlebar-color: $kob-font-color;
-$ui-titlebar-background-color: $ui-content-background-color;
-$ui-titlebar-background: darken($ui-titlebar-background-color,5%);
+$ui-titlebar-background-color: $ui-white;
+$ui-titlebar-background: none;
 $ui-titlebar-background-type: default;
+$ui-titlebar-bottom-border-color: #c1c1c1;
+$ui-titlebar-bottom-border-width: 1px;
+// $ui-titlebar-bottom-border-color: $kob-blue-light;
 
 // state-default
 $ui-default-border-color: #a9a9a9;
@@ -151,6 +157,28 @@ $ui-error-background-color: $kob-error-light;
 $ui-error-background: $ui-error-background-color; 
 $ui-error-background-type: default;
 $ui-error-link-color: $ui-error-color;
+
+// state-danger
+$ui-danger-border-width: 1px;
+$ui-danger-border-style: solid;
+$ui-danger-border-color: $kob-error-dark;
+$ui-danger-color: $kob-error-dark;
+$ui-danger-font-weight: bold;
+$ui-danger-hover-color: $ui-white;
+$ui-danger-background-color: $kob-error-light; 
+$ui-danger-background: linear-gradient($kob-error-light, $kob-error-dark);
+$ui-danger-background-type: image;
+
+// state-safe
+$ui-safe-border-width: 1px;
+$ui-safe-border-style: solid;
+$ui-safe-border-color: $kob-safe-dark;
+$ui-safe-color: $kob-safe-color;
+$ui-safe-font-weight: bold;
+$ui-safe-hover-color: $ui-white;
+$ui-safe-background-color: $kob-safe-light; 
+$ui-safe-background: linear-gradient($kob-safe-light, $kob-safe-dark);
+$ui-safe-background-type: image;
 
 // state-primary
 

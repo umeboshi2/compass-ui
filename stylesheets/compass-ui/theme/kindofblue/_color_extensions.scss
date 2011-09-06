@@ -1,0 +1,53 @@
+@mixin kindofblue-color-extensions {
+  .ui-state-danger, 
+  a.ui-state-danger,
+  a.ui-state-danger:link,
+  .ui-widget-content .ui-state-danger, 
+  .ui-widget-header .ui-state-danger {
+    border-width: $ui-default-border-width;
+    border-style: $ui-default-border-style;
+    border-color: $ui-default-border-color;
+    @include jquery-ui-background($ui-default-background-color, $ui-default-background, $ui-default-background-type);
+    font-weight: $ui-danger-font-weight;
+
+    color: $ui-danger-color;
+
+    &:hover {
+      border-width: $ui-danger-border-width;
+      border-style: $ui-danger-border-style;
+      border-color: $ui-danger-border-color;
+      @include jquery-ui-background($ui-danger-background-color, $ui-danger-background, $ui-danger-background-type);
+      font-weight: $ui-danger-font-weight;
+      color: $ui-danger-hover-color;
+    }
+
+  }
+
+  .ui-state-safe, 
+  a.ui-state-safe,
+  a.ui-state-safe:link,
+  .ui-widget-content .ui-state-safe, 
+  .ui-widget-header .ui-state-safe {
+    border-width: $ui-default-border-width;
+    border-style: $ui-default-border-style;
+    border-color: $ui-default-border-color;
+    @include jquery-ui-background($ui-default-background-color, $ui-default-background, $ui-default-background-type);
+    font-weight: $ui-safe-font-weight;
+
+    color: $ui-safe-color;
+
+    &:hover {
+      border-width: $ui-safe-border-width;
+      border-style: $ui-safe-border-style;
+      border-color: $ui-safe-border-color;
+      @include jquery-ui-background($ui-safe-background-color, $ui-safe-background, $ui-safe-background-type);
+      font-weight: $ui-safe-font-weight;
+      color: $ui-safe-hover-color;
+    }
+
+  }
+
+  .ui-large {
+    font-size: 2.0em;
+  }
+}

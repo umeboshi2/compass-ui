@@ -130,6 +130,9 @@ $(function(){
                  }
         });					
 
+        // Color buttons
+        $("#dangerButton, #safeButton").button();
+
         // Button Set
         $("#radio1").buttonset();
 

@@ -7,7 +7,7 @@
       padding: 0.5em 0.2em;
       @include border-radius(0px);
       border-width: 0px;
-      border-bottom: 1px solid #c1c1c1; 
+      border-bottom: $ui-titlebar-bottom-border-width solid $ui-titlebar-bottom-border-color;
       background: none;
       color: $ui-titlebar-color;
       font-weight: bold;

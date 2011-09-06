@@ -35,7 +35,7 @@
       position: relative; 
       @include border-bottom-radius(0px);
       border: 0px;
-      border-bottom: 1px solid #c1c1c1;
+      border-bottom: $ui-titlebar-bottom-border-width solid $ui-titlebar-bottom-border-color;
       font-size: 1.5em;
       font-weight: bold;
       background: none;
