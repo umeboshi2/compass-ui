@@ -189,7 +189,7 @@ $(function(){
     var summary = $(this).attr('data-summary');
     summary = name + '<br><span class="summary">' + summary + '</span>';
     // $('link[rel=stylesheet]').attr({href: $(this).attr('rel') + '?' + Date.now() });
-    $('link[id="theme"]').attr({href: $(this).attr('rel') + '?' + Date.now() });
+    $('link[id="theme"]').attr({href: $(this).attr('rel') + '?' + Number(new Date()) });
     $('h2#showing span')
       .fadeOut('slow', function() {
         $(this)
