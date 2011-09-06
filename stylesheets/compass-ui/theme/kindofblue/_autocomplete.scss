@@ -16,20 +16,6 @@
     }
   } 
 
-  .ui-autocomplete-input {
-    padding: 5px;
-    @include single-text-shadow(#fff, 0px 1px 0px);
-    outline: none;
-    border: 1px solid #a9a9a9;
-
-    @include border-radius(5px);
-    @include jquery-ui-background(#eff0f0, linear-gradient(#eff0f0, #ffffff), image);
-    &:hover, 
-    &:focus {
-      @include jquery-ui-background(#dfe0e1, linear-gradient(#dfe0e1, #ffffff), image);
-    }
-  }
-
   .ui-autocomplete.ui-menu.ui-widget.ui-widget-content {
     color: $ui-default-color;
     border-width: $ui-default-border-width;
