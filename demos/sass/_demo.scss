@@ -15,7 +15,6 @@ body{
   // font: 100% "Trebuchet MS", Helvetica, sans-serif;
 }
 
-
 #container {
   // @include container;
   margin: 20px auto;
@@ -91,6 +90,18 @@ body{
         padding-top: 6px;
       }
     }
+
+    #toggle-css {
+      a {
+        color: $test-blue-dark;
+        text-decoration: none;
+        padding: 5px 0 5px 5px;
+        &:hover {
+          background: $test-blue-dark;
+          color: #ffffff;
+        }
+      }
+    }
   }
 }
 
@@ -143,6 +154,10 @@ h2 {
   font-size: 1.5em;
   font-weight: bold;
 }
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
 p {
   font-size: 1.3em;
@@ -152,4 +167,5 @@ p {
 strong {
   font-weight: bold;
 }
+
 

@@ -24,6 +24,7 @@
 @import "kindofblue/slider";
 @import "kindofblue/tabs";
 @import "kindofblue/color_extensions";
+@import "kindofblue/formalize";
 
 @mixin kindofblue-theme {
   @include jquery-ui-theme;
@@ -34,13 +35,14 @@
   @include kindofblue-slider;
   @include kindofblue-tabs;
   @include kindofblue-color-extensions;
+  @include kindofblue-formalize;
 }
 
 // Default Radius
 $ui-border-radius: 5px;
 
 // Default Fonts
-$ui-font-family: "Trebuchet MS", Tahoma, Verdana, Arial, sans-serif;
+$ui-font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
 
 $ui-fixed-font-family: "andale mono", "lucida console", monospace;
 

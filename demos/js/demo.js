@@ -166,9 +166,16 @@ $(function(){
         $('#tabs2').tabs();
         $("#accordion2").accordion({ header: "h4" });
         // Nested button tests
-        $("#nestedButtonTest_1, #nestedButtonTest_2, #buttonInModal").button().click(function(e) {
-          e.preventDefault();
-        });
+        $("#nestedButtonTest_1, #nestedButtonTest_2, #buttonInModal")
+          .button().click(function(e) {
+            e.preventDefault();
+          });
+        break;
+      // ---------------------------
+      //  Combinations
+      // ---------------------------
+      case 'demo-form': 
+        $('.format-ui-button').button();
         break;
       default:
         // code
@@ -176,12 +183,13 @@ $(function(){
 
   }
 
-  // Switch styles 
+  // Handle Style Switching
   $('#toggle-css a').click(function() {
     var name = $(this).html();
     var summary = $(this).attr('data-summary');
     summary = name + '<br><span class="summary">' + summary + '</span>';
-    $('link[rel=stylesheet]').attr({href: $(this).attr('rel') + '?' + Date.now() });
+    // $('link[rel=stylesheet]').attr({href: $(this).attr('rel') + '?' + Date.now() });
+    $('link[id="theme"]').attr({href: $(this).attr('rel') + '?' + Date.now() });
     $('h2#showing span')
       .fadeOut('slow', function() {
         $(this)
