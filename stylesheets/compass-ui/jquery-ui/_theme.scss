@@ -1,14 +1,14 @@
-// ThemePress CSS Framework 
-// 
+// ThemePress CSS Framework
+//
 // Parts of this file were taken from the
 // jQuery UI CSS Framework 1.8.16
-// 
+//
 // Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
 // Dual licensed under the MIT or GPL Version 2 licenses.
 // http://jquery.org/license
-// 
+//
 // http://docs.jquery.com/UI/Theming/API
-// 
+//
 // To view and modify this theme, visit http://jqueryui.com/themeroller/
 
 // Default mixin for including all theme mixins
@@ -124,7 +124,7 @@
     font-weight: $ui-focus-font-weight;
     color: $ui-focus-color; }
 
-  .ui-state-hover a {
+  .ui-state-focus a {
     color: $ui-focus-link-color;
     text-decoration: none;
     &:hover {
@@ -169,7 +169,7 @@
     border-width: $ui-error-border-width;
     border-style: $ui-error-border-style;
     border-color: $ui-error-border-color;
-    
+
     @include jquery-ui-background($ui-error-background-color, $ui-error-background, $ui-error-background-type);
     color: $ui-error-color; }
 
@@ -177,7 +177,7 @@
     color: $ui-error-link-color; }
 
   .ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
-    font-weight: $ui-priority-font-weight; 
+    font-weight: $ui-priority-font-weight;
   }
 
   .ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
@@ -750,7 +750,7 @@
 
 // Misc visuals
 
-// Corner radius 
+// Corner radius
 // -------------------------------------
 
 @mixin jquery-ui-radius($radius: $ui-border-radius, $tr: false, $bl: false, $br: false) {
@@ -774,7 +774,7 @@
   }
 }
 
-// Overlays 
+// Overlays
 // -------------------------------------
 
 @mixin jquery-ui-overlays($radius: $ui-border-radius*2) {
@@ -792,7 +792,7 @@
     @include jquery-ui-background($ui-shadow-background-color, $ui-shadow-background, $ui-shadow-background-type);
     @include opacity($ui-shadow-opacity);
     @include border-radius($radius);
-  } 
+  }
 
 }
 
